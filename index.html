@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie使用edge渲染模式-->
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+	<meta name="renderer" content="webkit"><!--360渲染模式-->
+	<meta name="format-detection" content="telephone=notelphone=no, email=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta name="apple-touch-fullscreen" content="yes"/><!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色:默认值为 default，可以定为 black和 black-translucent-->
+	<meta http-equiv="Cache-Control" content="no-siteapp" /><!-- 不让百度转码 -->
+	<meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+	<meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+	<meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+	<meta name="browsermode" content="application"><!-- UC应用模式 -->
+	<meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+	<meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+	<title>网易轮播</title>
+    
+    <!-- Stylesheets -->
+<link type="text/css" href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="index.css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,500italic,500,300italic,300' rel='stylesheet' type='text/css'>
+<link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link type="text/css" href="icons/rondo/style.css" rel="stylesheet">
+<link type="text/css" href="css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="header" id="jump">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"><img src="images/Logo.jpg" alt="" width="246" height="70" /></a> </div>
+      <div class="collapse navbar-collapse hidden-xs">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#jump0">首页</a></li>
+          <li class="active"><a href="#jump1">青春西大</a></li>
+          <li><a href="#jump2">校级组织</a></li>
+          <li><a href="#jump3">学院</a></li>
+        
+          <li><a href="#jump4">联系我们</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+      
+      <div class="collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#jump0" data-toggle="collapse" data-target=".navbar-responsive-collapse">首页</a></li>
+          <li class="active"><a href="#jump1" data-toggle="collapse" data-target=".navbar-responsive-collapse">青春西大</a></li>
+          <li><a href="#jump2" data-toggle="collapse" data-target=".navbar-responsive-collapse">校级组织</a></li>
+          <li><a href="#jump3" data-toggle="collapse" data-target=".navbar-responsive-collapse">学院</a></li>
+          
+          <li><a href="#jump4" data-toggle="collapse" data-target=".navbar-responsive-collapse">联系我们</a></li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-responsive-collapse --> 
+    </div>
+  </nav>
+</header>
+
+<div class="jumper" id="jump0"></div>
+<div class="section type-1 big splash">
+  <div class="container">
+    <div class="splash-block">
+      <div class="centered">
+        <div class="container">
+          <div class="section-headlines">
+            <h1>西南大学新媒体联盟</h1>
+            <p>欢迎来到西大新媒体联盟！这里是全西大最全的微信公众号门户，可以帮助你找到学校官方组织、学院的官方公众号以及社团等信息!！</p>
+          </div>
+          <a href="#jump2" class="btn btn-outline btn-lg"> 校级组织 </a> &nbsp; <a href="#jump3" class="btn btn-outline btn-lg"> 学院 </a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 西大风景 -->
+<h1 align="center">西大风景</h1>
+<div class="js-silder">
+       <div class="silder-scroll">
+            <div class="silder-main">
+                <div class="silder-main-img">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="silder-main-img">
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="silder-main-img">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="silder-main-img">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="silder-main-img">
+                    <img src="images/5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="wySilder.min.js" type="text/javascript"></script>
+ 
+    <!-- 青春西大 -->
+<div id="jump1" class="jumper"></div>  
+    <div class="container">
+    <div class="row">
+    <div class="text-center"><h1>青春西大</h1></div>
+<div align="center">
+<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxMjEzMzU2NA==&from=singlemessage#wechat_redirect
+"><img src="images/logo/weixin.jpg" alt="" width="100" /></a>
+ 
+ <a href="http://weibo.com/u/2792519474"
+><img src="images/logo/weibo.jpg" alt="" width="100" /></a>
+
+<a href=http://music.163.com/m/radio?id=349693610&userid=419937482&from=singlemessage#?thirdfrom=qq
+><img src="images/logo/wangyi.jpg" alt="" width="100" /></a>
+
+<a href="https://v.qq.com/x/page/c05031kmlfp.html"><img src="images/logo/txsp.png" alt="" width="100" /></a>
+
+<a href="http://qm.qq.com/cgi-bin/qm/qr?k=H0HPnhVN_ju1Zboi5Fp3yKiTeV3Tsn3L"><img src="images/logo/qq.png" alt="" width="100" /></a>
+
+<a href="http://m.toutiao.com/profile/60120511339/"
+><img src="images/Logo/toutiao.jpg" alt="今日头条" width="100"/></a>
+</div>
+
+
+<div id="jump2" class="jumper"></div>
+<!-- Team -->
+<div class="section type-3">
+  <div class="container">
+    <div class="section-headlines">
+      <h4>校级组织</h4>
+      <h2>六大校级组织，帮助你的大学生活更加轻松美好！</h2>
+      <div>我们是一群热爱西大的人，为了西大能成为你所留恋的地方而努力 </div>
+    </div>
+        <div class="team_item">
+          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NDMwNTAyMQ==&scene=124#wechat_redirect"><img src="images/team/xueshenghui.jpg" alt="" width="296" height="300"></a></div>
+          <div class="team_body">
+            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NDMwNTAyMQ==&scene=124#wechat_redirect">西南大学学生会</a></h5>
+            <h6>服务同学、锻炼自我</h6>
+            <p>西南大学学生会是在校党委领导，校团委的指导下建立的学生组织，是联系学生和学校的重要纽带。本着"服务同学、锻炼自我"的宗旨，有机地组成学校的整体，为繁荣师生文化、丰富学生生活、卓有成效的做了大量工作，成为校园工作、生活的中坚力量。</p>
+          </div>
+        </div>
+      </div>
+      
+      
+        <div class="team_item">
+          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MzYyNzAzMw==&scene=124#wechat_redirect"><img src="images/team/tongxunshe.png" alt="" width="312" height="300"></a></div>
+          <div class="team_body">
+            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MzYyNzAzMw==&scene=124#wechat_redirect">西南大学学生通讯社</a></h5>
+            <h6>以纪律求生存，以成绩求威信</h6>
+            <p>西南大学学生通讯社（简称学通社），隶属于共青团西南大学委员会，主司校园新闻传媒工作的重要学生机构，拥有“团委喉舌”、 “西南大学对外宣传的窗口”、“西南大学校园新华社”以及“西南大学第一校园传媒”等美誉。</p>
+          </div>
+        </div>
+      </div>
+      
+
+        <div class="team_item">
+          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4MDE2NTczMg==&scene=124#wechat_redirect
+"><img src="images/team/chuangmeng.png" alt="" width="301" height="300"></a></div>
+          <div class="team_body">
+            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4MDE2NTczMg==&scene=124#wechat_redirect
+">西南大学大学生创新创业联盟</a></h5>
+            <h6>勇于探索、敢于创新、服务同学、奉献社会</h6>
+            <p>负责推进在校大学生创新创业工作，整合创新创业资源，为全校大学生树立创新创业的模范典型，提供创新创业的展示平台.</p>
+          </div>
+        </div>
+      </div>
+      
+
+
+        <div class="team_item">
+          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MjU0NDM5NQ==&scene=124#wechat_redirect
+"><img src="images/team/zhiyuanzhe.png" alt="" width="298" height="300"></a></div>
+          <div class="team_body">
+            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MjU0NDM5NQ==&scene=124#wechat_redirect
+">西南大学青年志愿者联合会</a></h5>
+            <h6>奉献、有爱、互助、进步</h6>
+            <p>西南大学青年志愿者联合会（以下简称“西南大学青志联”），是西南大学为顺应“整合学校志愿工作相关资源”的志愿工作发展要求而成立的，是由西南大学党委领导，以西南大学团委为组织依托，以西南大学学生为主体的志愿者组织，是西南大学各级志愿组织的先锋队和领导核心。</p>
+          </div>
+        </div>
+      </div>
+      
+
+        <div class="team_item">
+          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODA2NzA3Mw==&scene=124#wechat_redirect
+"><img src="images/team/shelian.jpg" alt="" width="300" height="306"></a></div>
+          <div class="team_body">
+            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODA2NzA3Mw==&scene=124#wechat_redirect
+">西南大学学生社团联合会</a></h5>
+            <h6>凝聚社团力量，繁荣校园文化</h6>
+            <p>西南大学学生社团联合会成立于2005年7月，是校团委下属六大学生组织之一，以“凝聚社团力量，繁荣校园文化”为宗旨，“服务，监督，扶持，创新”为口号，主要负责对全校校级学生社团及其活动实施管理与协调，实现学生社团共同目标的学生自治组织。</p>
+          </div>
+        </div>
+      </div>
+      
+
+
+        <div class="team_item">
+          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTE0NzgzMg==&scene=124#wechat_redirect
+"><img src="images/team/yishutuan.jpg" alt="" width="301" height="300"></a></div>
+          <div class="team_body">
+            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTE0NzgzMg==&scene=124#wechat_redirect
+">西南大学学生艺术团</a></h5>
+            <h6>艺术伴我成长</h6>
+            <p>西南大学学生艺术团系共青团西南大学委员会直属的学生组织，是西南大学历史最悠久的校级综合性文艺团体，代表西南大学学生组织中，最高艺术水平。一直以来，在校党委的领导下、校团委和数位专业老师的亲切指导下，本着“艺术伴我成长”的理念，坚持“梦·绽放 艺·律动”的口号，积极创新，不断进取；先后涌现了一大批热爱艺术，热爱生活的优秀学子，多次代表学校参加省、市、区的各种文艺演出，并取得了优异成绩</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Featured Work -->
+<div class="jumper" id="jump3"></div>
+<div class="section type-1" style="padding-bottom: 0">
+  <div class="container">
+    <div class="section-headlines">
+      <h4>学院</h4>
+      <h2>你所在的学院，就是你的家，让你的大学生活的色彩更加饱满</h2>
+      <div> 祝你在西大度过美好的时光</div>
+    </div>
+    <div class="gallery-control">
+      <div data-toggle="buttons">
+        <label class="btn btn-outline filter active" data-filter="phone tablet desktop">
+          <input type="radio" name="options" id="option1">
+          全部 </label>
+        <label class="btn btn-outline filter" data-filter="phone">
+          <input type="radio" name="options" id="option2">
+          文学院 </label>
+        <label class="btn btn-outline filter" data-filter="tablet">
+          <input type="radio" name="options" id="option3">
+          理学院 </label>
+        <label class="btn btn-outline filter" data-filter="desktop">
+          <input type="radio" name="options" id="option3">
+          工学院 </label>
+      </div>
+    </div>
+  </div>
+  <div class="mixitup">
+    <ul id="Grid" class="unstyled">
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUxMzAzOTA5Nw==&scene=124#wechat_redirect"><img src="images/portfolio/wenxue.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>文学院</b></p>
+                <div>鹿鸣西大</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix tablet">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIzMTAxODU5OQ==&scene=124#wechat_redirect"><img src="images/portfolio/xinli.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>西大心理</b></p>
+                <div>西南大学心理学部</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix desktop">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MzU5Mzg2MQ==&scene=124#wechat_redirect"><img src="images/portfolio/dianzi.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>电子信息工程</b></p>
+                <div>西南大学电子信息工程学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix desktop">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5NDQ5OTUwOA==&scene=123&from=singlemessage&isappinstalled=0#wechat_redirect"<img src="images/portfolio/cailiao.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>材料与能源学部</b></p>
+                <div>西南大学材料与能源学部</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix tablet">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MDUzNzc0NQ==&scene=124#wechat_redirect"><img src="images/portfolio/jiaoyu.png"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>教育学部</b></p>
+                <div>西南大学教育学部</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix tablet">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5MDU1NjY5MQ==&scene=124#wechat_redirect"><img src="images/portfolio/jixin.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>计信院</b></p>
+                <div>西南大学计算机与信息科学学院 软件学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix tablet">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxOTM1ODU5Mg==&scene=124#wechat_redirect"><img src="images/portfolio/dike.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>地理嘛嘛</b></p>
+                <div>西南大学地理科学学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix tablet">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5NjA5MzE2NQ==&scene=124#wechat_redirect"><img src="images/portfolio/tiyu.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>体育学院</b></p>
+                <div>西南大学体育学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MTE5MjM5MA==&scene=124#wechat_redirect"><img src="images/portfolio/waiyuan.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>外院</b></p>
+                <div>西南大学外国语学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxNzA5MzI5NQ==&scene=124#wechat_redirect"><img src="images/portfolio/xinchuan.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>新传院</b></p>
+                <div>西南大学新闻传媒学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NDkyNjI2MQ==&scene=124#wechat_redirect"><img src="images/portfolio/wenshe.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>文社院</b></p>
+                <div>西南大学文化与社会发展学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix tablet">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTAxMjAyMg==&scene=124#wechat_redirect"><img src="images/portfolio/shutong.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>数统院</b></p>
+                <div>西南大学数据与统计学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTk3MTY2MQ==&scene=124#wechat_redirect"><img src="images/portfolio/zhengguan.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>政管院</b></p>
+                <div>西南大学政治与公共管理学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MjQ1MTk5NQ==&scene=124#wechat_redirect"><img src="images/portfolio/jingguan.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>经管院</b></p>
+                <div>西南大学经济管理学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MjQ4NTM4MA==&scene=124#wechat_redirect"><img src="images/portfolio/faxue.jpg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>法学院</b></p>
+                <div>西南大学法学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3MjU2MjA2OQ==&scene=124#wechat_redirect"><img src="images/portfolio/yinyue.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>音乐学院</b></p>
+                <div>西南大学音乐学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix phone">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MjU2NjQ3MA==&scene=124#wechat_redirect"><img src="images/portfolio/art.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>美术学院</b></p>
+                <div>西南大学美术学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="mix desktop">
+        <div>
+          <div class="media-thumb"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3ODAxMDMyMw==&scene=124#wechat_redirect"><img src="images/portfolio/gongyuan.jpeg"></a>
+            <div class="media-desc">
+              <div>
+                <p><b>西大工院</b></p>
+                <div>西南大学工程技术学院</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!--end:.mixitup--> 
+  <div class="jumper" id="jump4"></div>
+  <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">西南大学  &copy; - 西南大学官方新媒体联盟门户网站<p>@www.swu.edu.cn   @http://gqt.swu.edu.cn/</p>
+  <p>版权所有</p> </div>
+    </div>
+  </div>
+</footer><!--Scripts--> 
+ 
+<script src="scripts/jquery-1.10.2.min.js"></script> 
+<script src="bootstrap/js/bootstrap.min.js"></script> 
+<script src="scripts/jquery.smooth-scroll.min.js"></script> 
+<script src="scripts/mixitup/jquery.mixitup.min.js"></script> 
+<script src="scripts/theme.js"></script> 
+<script src="wySilder.min.js" type="text/javascript">
+</script>
+<script>
+        $(function (){
+    		$(".js-silder").silder({
+                auto: true,//自动播放，传入任何可以转化为true的值都会自动轮播
+                speed: 20,//轮播图运动速度
+                sideCtrl: true,//是否需要侧边控制按钮
+                bottomCtrl: true,//是否需要底部控制按钮
+                defaultView: 0,//默认显示的索引
+                interval: 3000,//自动轮播的时间，以毫秒为单位，默认3000毫秒
+                activeClass: "active",//小的控制按钮激活的样式，不包括作用两边，默认active
+            });
+    	});
+		$('.nav-tabs a').click(function (e) {
+			e.preventDefault();
+			$(this).tab('show');
+		})
+	</script>
+	
+</body>
+
+</body>
+</html>
