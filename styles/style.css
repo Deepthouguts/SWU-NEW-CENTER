@@ -209,13 +209,13 @@ body{
 }
 
 .nav-icon{
-	float:left;
-	border-radius:400px;
-	width:120px;
-	height:120px;
-	margin-left:40px;
-	margin-right:2px;
-	margin-bottom:40px;
+	float: left;
+	border-radius: 400px;
+	width: 100px;
+	height: 100px;
+	margin-left: 40px;
+	margin-right: 2px;
+	margin-bottom: 40px;
 }
 
 .nav-icon1{
@@ -441,27 +441,3 @@ body{
 	margin-bottom:20px;
 	margin-top:10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
