@@ -28,210 +28,94 @@
 <link type="text/css" href="icons/font-awesome/css/font-awesome.css" rel="stylesheet">
 <link type="text/css" href="icons/rondo/style.css" rel="stylesheet">
 <link type="text/css" href="css/theme.css" rel="stylesheet">
+<link href="styles/style.css"				rel="stylesheet" type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="styles/shutter.css">
+<!--Page Scripts Load -->
+<script src="../../../../www.paultrifa.com/analytics/flaty.js"></script>
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>	
+<script src="scripts/hammer.js"			type="text/javascript"></script>	
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/jquery.swipebox.js" type="text/javascript"></script>
+<script src="scripts/bxslider.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
 </head>
 
-<body style="background:#000">
-<header class="header" id="jump">
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#"><img src="images/Logo.jpg" alt="" width="246" height="70" /></a> </div>
-      <div class="collapse navbar-collapse hidden-xs">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#jump0">首页</a></li>
-          <li class="active"><a href="#jump1">青春西大</a></li>
-          <li><a href="#jump2">校级组织</a></li>
-          <li><a href="#jump3">学院</a></li>
-        
-          <li><a href="#jump4">联系我们</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-      
-      <div class="collapse navbar-responsive-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#jump0" data-toggle="collapse" data-target=".navbar-responsive-collapse">首页</a></li>
-          <li class="active"><a href="#jump1" data-toggle="collapse" data-target=".navbar-responsive-collapse">青春西大</a></li>
-          <li><a href="#jump2" data-toggle="collapse" data-target=".navbar-responsive-collapse">校级组织</a></li>
-          <li><a href="#jump3" data-toggle="collapse" data-target=".navbar-responsive-collapse">学院</a></li>
-          
-          <li><a href="#jump4" data-toggle="collapse" data-target=".navbar-responsive-collapse">联系我们</a></li>
-          
-        </ul>
-      </div>
-      <!-- /.navbar-responsive-collapse --> 
-    </div>
-  </nav>
-</header>
+<body>
 
-<div class="jumper" id="jump0"></div>
-<div class="section type-1 big splash">
-  <div class="container">
-    <div class="splash-block">
-      <div class="centered">
-        <div class="container">
-          <div class="section-headlines">
-            <h1>西南大学新媒体联盟</h1>
-            <p>欢迎来到西大新媒体联盟！这里是全西大最全的微信公众号门户，可以帮助你找到学校官方组织、学院的官方公众号以及社团等信息!！</p>
-          </div>
-          <a href="#jump2" class="btn btn-outline btn-lg"> 校级组织 </a> &nbsp; <a href="#jump3" class="btn btn-outline btn-lg"> 学院 </a> </div>
-      </div>
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+<div class="content">
+  
+  
+<div class="shutter">
+    <div class="shutter-img">
+      <a href="#" data-shutter-title="法学院"><img src="images/首页图片/shutter_1.jpg" alt="#"></a>
+      <a href="#" data-shutter-title="中心图书馆"><img src="images/首页图片/shutter_2.jpg" alt="#"></a>
+      <a href="#" data-shutter-title="文学院"><img src="images/首页图片/shutter_3.jpg" alt="#"></a>
+       <a href="#" data-shutter-title="中图"><img src="images/首页图片/shutter_4.jpg" alt="#"></a>
+    </div>
+    <ul class="shutter-btn">
+      <li class="prev"></li>
+      <li class="next"></li>
+    </ul>
+    <div class="shutter-desc">
+      <p>欢迎来到西南大学团委青年新媒体联盟</p>
     </div>
   </div>
-</div>
 
-<!-- 西大风景 -->
-<h1 align="center"><font color="#FFFFFF"西大风景</font></h1>
-<div class="js-silder">
-       <div class="silder-scroll">
-            <div class="silder-main">
-                <div class="silder-main-img">
-                    <img src="images/1.jpg" alt="">
-                </div>
-                <div class="silder-main-img">
-                    <img src="images/2.jpg" alt="">
-                </div>
-                <div class="silder-main-img">
-                    <img src="images/3.jpg" alt="">
-                </div>
-                <div class="silder-main-img">
-                    <img src="images/4.jpg" alt="">
-                </div>
-                <div class="silder-main-img">
-                    <img src="images/5.jpg" alt="">
-                </div>
-            </div>
+  <script src="scripts/jquery.ming.js"></script>
+  <script src="scripts/velocity.js"></script>
+  <script src="scripts/shutter.js"></script>
+  <script>
+    $(function () {
+      $('.shutter').shutter({
+        shutterW: 320, // 容器宽度
+        shutterH: 160, // 容器高度
+        isAutoPlay: true, // 是否自动播放
+        playInterval: 3000, // 自动播放时间
+        curDisplay: 3, // 当前显示页
+        fullPage: false // 是否全屏展示
+      });
+    });
+  </script>
+  
+  <div class="six">
+    	
+        <div align="center"><img class="replace-2x" src="images/标题/六大校级组织公众号.jpg" alt="img"  height="70" width="350">
         </div>
-    </div>
+    
 
-
-    <script src="jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="wySilder.min.js" type="text/javascript"></script>
- 
-    <!-- 青春西大 -->
-<div id="jump1" class="jumper"></div>  
-    <div class="container">
-    <div class="row">
-    <div class="text-center"><h1><font color="#FFFFFF">青春西大</font></h1></div>
+            
+  </div>
 <div align="center">
-<table>
-  <tr>
-<td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxMjEzMzU2NA==&from=singlemessage#wechat_redirect
-"><img src="images/Logo/weixin.jpg" alt="" width="100" /></a></td>
- 
-<td><a href="http://weibo.com/u/2792519474"
-><img src="images/Logo/weibo.jpg" alt="" width="100" /></a></td>
-
-<td><a href=http://music.163.com/m/radio?id=349693610&userid=419937482&from=singlemessage#?thirdfrom=qq
-><img src="images/Logo/wangyi.jpg" alt="" width="100" /></a></td>
-       </div>
-     </tr>
-  </table> 
-<table>
-  <tr>
-<td><a href="https://v.qq.com/x/page/c05031kmlfp.html"><img src="images/Logo/txsp.png" alt="" width="100" /></a></td>
-
-<td><a href="http://qm.qq.com/cgi-bin/qm/qr?k=H0HPnhVN_ju1Zboi5Fp3yKiTeV3Tsn3L"><img src="images/Logo/qq.png" alt="" width="100" /></a></td>
-
-<td><a href="http://m.toutiao.com/profile/60120511339/"
-><img src="images/Logo/toutiao.jpg" alt="今日头条" width="100"/></a></td>
-       </div>
-     </tr>
-  </table>
-</div>
-
-<div id="jump2" class="jumper"></div>
-<!-- Team -->
-    <div class="section-headlines">
-      <h4><font color="#FFFFFF">校级组织</font></h4>
-      <h2><font color="#FFFFFF">六大校级组织，帮助你的大学生活更加轻松美好！</font></h2>
-      <div><font color="#FFFFFF">我们是一群热爱西大的人，为了西大能成为你所留恋的地方而努力</font></div>
+    <div class="navigation-icons">
+    	<a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODA2NzA3Mw==&scene=124#wechat_redirect" class="nav-icon  XDSL-nav"></a>
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4MDE2NTczMg==&scene=124#wechat_redirect" class="nav-icon  XDCM-nav"></a>
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NDMwNTAyMQ==&scene=124#wechat_redirect" class="nav-icon  XDXSH-nav"></a>
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MzYyNzAzMw==&scene=124#wechat_redirect" class="nav-icon  XDTXS-nav"></a>
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MjU0NDM5NQ==&scene=124#wechat_redirect" class="nav-icon  XDQNZYZ-nav"></a>
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTE0NzgzMg==&scene=124#wechat_redirect" class="nav-icon  XDYST-nav"></a> 
+	</div>
     </div>
-        <div class="team_item">
-          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NDMwNTAyMQ==&scene=124#wechat_redirect"><img src="images/team/xueshenghui.jpg" alt=""></a></div>
-          <div class="team_body">
-            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NDMwNTAyMQ==&scene=124#wechat_redirect">西南大学学生会</a></h5>
-            <h6><font color="#BEBEBE">服务同学、锻炼自我</font></h6>
-            <p>西南大学学生会是在校党委领导，校团委的指导下建立的学生组织，是联系学生和学校的重要纽带。本着"服务同学、锻炼自我"的宗旨，有机地组成学校的整体，为繁荣师生文化、丰富学生生活、卓有成效的做了大量工作，成为校园工作、生活的中坚力量。</p>
-          </div>
-        </div>
-      </div>
-      
-      
-        <div class="team_item">
-          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MzYyNzAzMw==&scene=124#wechat_redirect"><img src="images/team/tongxunshe.png" alt=""></a></div>
-          <div class="team_body">
-            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MzYyNzAzMw==&scene=124#wechat_redirect">西南大学学生通讯社</a></h5>
-            <h6><font color="#BEBEBE">以纪律求生存，以成绩求威信</font></h6>
-            <p>西南大学学生通讯社（简称学通社），隶属于共青团西南大学委员会，主司校园新闻传媒工作的重要学生机构，拥有“团委喉舌”、 “西南大学对外宣传的窗口”、“西南大学校园新华社”以及“西南大学第一校园传媒”等美誉。</p>
-          </div>
-        </div>
-      </div>
-      
 
-        <div class="team_item">
-          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4MDE2NTczMg==&scene=124#wechat_redirect
-"><img src="images/team/chuangmeng.jpg" alt="" width="200" height="200"></a></div>
-          <div class="team_body">
-            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4MDE2NTczMg==&scene=124#wechat_redirect
-">西南大学大学生创新创业联盟</a></h5>
-            <h6><font color="#BEBEBE">勇于探索、敢于创新、服务同学、奉献社会</font></h6>
-            <p>负责推进在校大学生创新创业工作，整合创新创业资源，为全校大学生树立创新创业的模范典型，提供创新创业的展示平台.</p>
-          </div>
-        </div>
-      </div>
-      
-
-
-        <div class="team_item">
-          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MjU0NDM5NQ==&scene=124#wechat_redirect
-"><img src="images/team/zhiyuanzhe.png" alt=""></a></div>
-          <div class="team_body">
-            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MjU0NDM5NQ==&scene=124#wechat_redirect
-">西南大学青年志愿者联合会</a></h5>
-            <h6><font color="#BEBEBE">奉献、有爱、互助、进步</font></h6>
-            <p>西南大学青年志愿者联合会（以下简称“西南大学青志联”），是西南大学为顺应“整合学校志愿工作相关资源”的志愿工作发展要求而成立的，是由西南大学党委领导，以西南大学团委为组织依托，以西南大学学生为主体的志愿者组织，是西南大学各级志愿组织的先锋队和领导核心。</p>
-          </div>
-        </div>
-      </div>
-      
-
-        <div class="team_item">
-          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODA2NzA3Mw==&scene=124#wechat_redirect
-"><img src="images/team/shelian.jpg" alt=""></a></div>
-          <div class="team_body">
-            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODA2NzA3Mw==&scene=124#wechat_redirect
-">西南大学学生社团联合会</a></h5>
-            <h6><font color="#BEBEBE">凝聚社团力量，繁荣校园文化</font></h6>
-            <p>西南大学学生社团联合会成立于2005年7月，是校团委下属六大学生组织之一，以“凝聚社团力量，繁荣校园文化”为宗旨，“服务，监督，扶持，创新”为口号，主要负责对全校校级学生社团及其活动实施管理与协调，实现学生社团共同目标的学生自治组织。</p>
-          </div>
-        </div>
-      </div>
-      
-
-
-        <div class="team_item">
-          <div class="img_block"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTE0NzgzMg==&scene=124#wechat_redirect
-"><img src="images/team/yishutuan.jpg" alt=""></a></div>
-          <div class="team_body">
-            <h5><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTE0NzgzMg==&scene=124#wechat_redirect
-">西南大学学生艺术团</a></h5>
-            <h6><font color="#BEBEBE">艺术伴我成长</font></h6>
-            <p>西南大学学生艺术团系共青团西南大学委员会直属的学生组织，是西南大学历史最悠久的校级综合性文艺团体，代表西南大学学生组织中，最高艺术水平。一直以来，在校党委的领导下、校团委和数位专业老师的亲切指导下，本着“艺术伴我成长”的理念，坚持“梦·绽放 艺·律动”的口号，积极创新，不断进取；先后涌现了一大批热爱艺术，热爱生活的优秀学子，多次代表学校参加省、市、区的各种文艺演出，并取得了优异成绩</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Featured Work -->
-<div class="jumper" id="jump3"></div>
-<div class="section type-1" style="padding-bottom: 0">
-  <div class="container">
-    <div class="section-headlines">
-      <h4>学院</h4>
-      <h2>你所在的学院，就是你的家，让你的大学生活的色彩更加饱满</h2>
-      <div> 祝你在西大度过美好的时光</div>
+    	
+  <div align="center"><img class="replace-2x" src="images/标题/学院公众号.jpg" alt="img"  height="70" width="350">
     </div>
+     
 <table align="center">
   <tr>
           <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUxMzAzOTA5Nw==&scene=124#wechat_redirect"><img src="images/portfolio/wenxue.jpeg"></a></td>
@@ -243,18 +127,22 @@
             
           <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MDUzNzc0NQ==&scene=124#wechat_redirect"><img src="images/portfolio/教育学部.jpg"></a></td>
            
-          <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5MDU1NjY5MQ==&scene=124#wechat_redirect"><img src="images/portfolio/计算机.jpg"></a></td>
-            
-            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxOTM1ODU5Mg==&scene=124#wechat_redirect"><img src="images/portfolio/地科.jpg"></a></td>
   </tr>
 </table>
     <table align="center">
        <tr> 
+        <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5MDU1NjY5MQ==&scene=124#wechat_redirect"><img src="images/portfolio/计算机.jpg"></a></td>
+            
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxOTM1ODU5Mg==&scene=124#wechat_redirect"><img src="images/portfolio/地科.jpg"></a></td>
+            
           <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5NjA5MzE2NQ==&scene=124#wechat_redirect"><img src="images/portfolio/体育.jpg"></a></td>
             
            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MTE5MjM5MA==&scene=124#wechat_redirect"><img src="images/portfolio/外国语学院.png"></a></td>
-            
-          <td><a href=""><img src="images/portfolio/生物技术.jpg"></a></td> 
+    </tr>
+</table>
+    <table align="center">
+       <tr> 
+          <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5NTA5NTMxNg==&scene=124#wechat_redirect"><img src="images/portfolio/生物技术.jpg"></a></td> 
             
             <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5OTAxMjAyMg==&scene=124#wechat_redirect"><img src="images/portfolio/数统.png"></a></td>
             
@@ -265,32 +153,35 @@
  </table>
  <table align="center">
     <tr>
-           <td><a href=""><img src="images/portfolio/物理.jpg"></a></td>
+           <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODA3ODA0MA==&scene=124#wechat_redirect"><img src="images/portfolio/物理.jpg"></a></td>
            
             <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3MjU2MjA2OQ==&scene=124#wechat_redirect"><img src="images/portfolio/音乐.jpg"></a></td>
             
-            <td><a href=""><img src="images/portfolio/药学.jpg"></a></td>
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NjkzNzY2MQ==&scene=124#wechat_redirect"><img src="images/portfolio/药学.jpg"></a></td>
             
                         
-            <td><a href=""><img src="images/portfolio/食品.jpg"></a></td>
-            
-            <td><a href=""><img src="images/portfolio/材能.jpg"></a></td>
-            
-            <td><a href=""><img src="images/portfolio/纺织.jpg"></a></td>
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5ODg2MTM0MQ==&scene=124#wechat_redirect"><img src="images/portfolio/食品.jpg"></a></td>
   </tr>
 </table>
 
 <table align="center">
     <tr>
-           <td><a href=""><img src="images/portfolio/动科.jpg"></a></td>
+          <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5NDQ5OTUwOA==&scene=123&uin=MTk0MTE4NjE4MQ%3D%3D&key=0c7a868aea4f81750c47250078f22f15d3e36ff6286b3a1bcb09b98a3e099f78f2281585c1b163078fb664ae46232d92398d16cff49a8c8ff88ce5b8db08d5d70178bc545e6735ab67f064448b7de19a&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.12.6+build(16G29)&version=12020810&lang=zh_CN&nettype=WIFI&a8scene=0&fontScale=100&pass_ticket=GlrNL9HqdGu%2BJF1%2BbFaAj9cuBi97GMjZytdY6fCPbG6oDhRR3twAG6rnB3l1NTtv"><img src="images/portfolio/材能.jpg"></a></td>
+            
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAwODM2MTU2Mg==&scene=124#wechat_redirect"><img src="images/portfolio/纺织.jpg"></a></td>
+            
+           <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5NjUzNjU2Ng==&scene=124#wechat_redirect"><img src="images/portfolio/动科.jpg"></a></td>
             
             <td><a href=""><img src="images/portfolio/历史.jpg"></a></td>
+   </tr>
+</table>
+<table align="center">
+     <tr> 
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIzODEyNTU5MQ==&scene=124#wechat_redirect"><img src="images/portfolio/马院.jpg"></a></td>
             
-            <td><a href=""><img src="images/portfolio/马院.jpg"></a></td>
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NDQzMzQ0MQ==&scene=124#wechat_redirect"><img src="images/portfolio/农学.jpg"></a></td>
             
-            <td><a href=""><img src="images/portfolio/农学.jpg"></a></td>
-            
-            <td><a href=""><img src="images/portfolio/生科.jpg"></a></td>
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyOTA2MDkxMw==&scene=124#wechat_redirect"><img src="images/portfolio/生科.jpg"></a></td>
             <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3ODAxMDMyMw==&scene=124#wechat_redirect"><img src="images/portfolio/工院.jpg"></a></td>
             
   </tr>
@@ -304,36 +195,45 @@
             <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MjQ4NTM4MA==&scene=124#wechat_redirect"><img src="images/portfolio/法学.jpg"></a></td>
             
             
-            <td><a href=""><img src="images/portfolio/西塔.png"></a></td>
-            
-            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MjU2NjQ3MA==&scene=124#wechat_redirect"><img src="images/portfolio/美院.jpg"></a></td>
-            
-            <td><a href=""><img src="images/portfolio/新传.jpg"></a></td>
-  </tr>
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxNzg3NDA1Nw==&scene=124#wechat_redirect"><img src="images/portfolio/西塔.png"></a></td>
+   </tr>
 </table>
 <table align="center">
-    <tr>
-           <td><a href=""><img src="images/portfolio/培训.jpg"></a></td>
+    <tr> 
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MjU2NjQ3MA==&scene=124#wechat_redirect"><img src="images/portfolio/美院.jpg"></a></td>
             
-            <td><a href=""><img src="images/portfolio/荣昌.jpg"></a></td>
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxNzA5MzI5NQ==&scene=124#wechat_redirect"><img src="images/portfolio/新传.jpg"></a></td>
+
+           <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3NjIyODM5Ng==&scene=124#wechat_redirect"><img src="images/portfolio/培训.jpg"></a></td>
             
-            <td><a href=""><img src="images/portfolio/网络与继续.jpg"></a></td>  
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIxNjA4NTE0MQ==&scene=124#wechat_redirect"><img src="images/portfolio/荣昌.jpg"></a></td>
+            
+            <td><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA5MDU2NzgwNw==&scene=124#wechat_redirect"><img src="images/portfolio/网络与继续.jpg"></a></td>  
   </tr>
 </table>   
-<p align="center"><img src="images/portfolio/柑橘.png"></p>
-<p align="center"><img src="images/portfolio/化工.jpeg"></p>
-<p align="center"><img src="images/portfolio/植保.jpg"></p>
-<p align="center"><img src="images/portfolio/资环.jpg"></p>
+<p align="center"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA3MjUyMjY0MA==&scene=124#wechat_redirect"><img src="images/portfolio/柑橘.png"></a></p>
+<p align="center"><a href=""><img src="images/portfolio/化工.jpeg"></a></p>
+<p align="center"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5MDg3Njc1OQ==&scene=124#wechat_redirect"><img src="images/portfolio/植保.jpg"></a></p>
+<p align="center"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5NzkxNDk4Mw==&scene=124#wechat_redirect"><img src="images/portfolio/资环.jpg"></a></p>
+<div align="center">
+<a href="http://weixin.swu.edu.cn/hgcloudshow/wwhtml/xndx/20160215154939689.html?from=groupmessage&isappinstalled=0"><h5>西南大学校园微网</h5></a>
+     <a href="http://cqswu.dongmeiwang.com/m?setopenidcookie=yes&from=groupmessage&isappinstalled=0"><h5>西南大学场馆借阅</h5></a>
+     <a href="http://weixin.swu.edu.cn:8080/zh/web/xdwx/bst"><h5>西大百事通</h5></a>
+     </div>
+     
+     <div class="small-navigation-icons">
+    	<a href="https://m.weibo.cn/p/1005052792519474" class="small-nav-icon sina-nav"></a>
+        <a href="https://user.qzone.qq.com/3554405546?ptlang=2052&source=namecardhoverqzone" class="small-nav-icon qzone-nav"></a>
+        <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzAxMjEzMzU2NA==&scene=124#wechat_redirect" class="small-nav-icon wechat-nav"></a>
+</div>
                                
   <!--end:.mixitup--> 
-<div class="jumper" id="jump4"></div>
-  <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div text align="center"><p>技术维护：周学谦  文案：周学谦  责编：陈一卿</p><p>版权归西南大学青年新媒体中心所有<a href="http://weixin.swu.edu.cn/hgcloudshow/wwhtml/xndx/20160215154939689.html?from=groupmessage&isappinstalled=0">@青春西大</a></p> </div>
-    </div>
-  </div>
-</footer><!--Scripts--> 
+<div style="background:#090">   
+        <p class="landing-copyright copyright">技术维护：郑嘉俊、周学谦 文案：郑嘉俊</p>
+     <p class="landing-copyright copyright">责编：陈一卿</p>
+ <p class="landing-copyright copyright">Copyright版权@归西南大学团委青年新媒体中心所有</p>
+</div>   
+<!--Scripts--> 
  
 <script src="scripts/jquery-1.10.2.min.js"></script> 
 <script src="bootstrap/js/bootstrap.min.js"></script> 
@@ -342,23 +242,6 @@
 <script src="scripts/theme.js"></script> 
 <script src="wySilder.min.js" type="text/javascript">
 </script>
-<script>
-        $(function (){
-    		$(".js-silder").silder({
-                auto: true,//自动播放，传入任何可以转化为true的值都会自动轮播
-                speed: 20,//轮播图运动速度
-                sideCtrl: true,//是否需要侧边控制按钮
-                bottomCtrl: true,//是否需要底部控制按钮
-                defaultView: 0,//默认显示的索引
-                interval: 3000,//自动轮播的时间，以毫秒为单位，默认3000毫秒
-                activeClass: "active",//小的控制按钮激活的样式，不包括作用两边，默认active
-            });
-    	});
-		$('.nav-tabs a').click(function (e) {
-			e.preventDefault();
-			$(this).tab('show');
-		})
-	</script>
 	
 </body>
 
